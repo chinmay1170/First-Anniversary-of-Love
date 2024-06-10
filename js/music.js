@@ -7,5 +7,3 @@ myMusic.play();
 function pauseMusic() {
 myMusic.pause();
 }
-
-playMusic()
