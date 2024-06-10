@@ -15,7 +15,6 @@ function showImage() {
 }
 
 function play(){
-	playMusic()
 	if(t == 0){
 		myImage.setAttribute("src", "");
 		myTxt.innerHTML = "";
