@@ -4,7 +4,7 @@ dv.style.opacity = 0;
 var val = 0;
 
 function timer(){
-		var start = new Date(2023, 5, 25, 0, 0); // Month is 0-indexed (0 = January, 5 = June)
+		var start = new Date(2023, 4, 25, 0, 0); // Month is 0-indexed (0 = January, 5 = June)
 		var now = new Date();
 		var t = now - start;
 
