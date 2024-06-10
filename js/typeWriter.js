@@ -34,3 +34,4 @@ var typeInterval;
 		}
 	}, 100);
 //};
+
