@@ -4,25 +4,23 @@ dv.style.opacity = 0;
 var val = 0;
 
 function timer(){
-	var start = new Date(2023, 5, 25, 0, 0);
-	var t = new Date() - start;
-	var d = Math.floor(t / 1000 / 60 / 60 / 24);
-	var h = Math.floor(t / 1000 / 60 / 60 % 24);
-	if(h < 10){
-		h = "0" + h;
-	}
-	var m = Math.floor(t / 1000 / 60 % 60);
-	if(m < 10){
-		m = "0" + m;
-	}
-	var s = Math.floor(t / 1000 % 60);
-	if(s < 10){
-		s = "0" + s;
-	}
-	document.getElementById("d").innerHTML = d;
-	document.getElementById("h").innerHTML = h;
-	document.getElementById("m").innerHTML = m;
-	document.getElementById("s").innerHTML = s;
+		var start = new Date(2023, 5, 25, 0, 0); // Month is 0-indexed (0 = January, 5 = June)
+		var now = new Date();
+		var t = now - start;
+
+		var d = Math.floor(t / 1000 / 60 / 60 / 24);
+		var h = Math.floor((t / 1000 / 60 / 60) % 24);
+		var m = Math.floor((t / 1000 / 60) % 60);
+		var s = Math.floor((t / 1000) % 60);
+
+		if(h < 10) h = "0" + h;
+		if(m < 10) m = "0" + m;
+		if(s < 10) s = "0" + s;
+
+		document.getElementById("d").innerHTML = d;
+		document.getElementById("h").innerHTML = h;
+		document.getElementById("m").innerHTML = m;
+		document.getElementById("s").innerHTML = s;
 }
 
 function fadein(){
