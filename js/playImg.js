@@ -3,7 +3,7 @@ var btn = document.getElementById("heartTxt");
 btn.style.opacity = 0;
 var btnVal = 0;
 
-function showImage(){
+function showImage() {
 	//document.getElementById("imgTxt").style.opacity = 0;
 	myImage.setAttribute("src", imageArray[imageIndex]);
 	myTxt.innerHTML = txtArray[imageIndex];

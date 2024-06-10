@@ -1,11 +1,11 @@
 var myMusic= document.getElementById("music");
 
-function play() {
+function playMusic() {
 myMusic.play();
 }
 
-function pause() {
+function pauseMusic() {
 myMusic.pause();
 }
 
-play()
+playMusic()
